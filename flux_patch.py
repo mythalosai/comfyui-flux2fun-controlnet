@@ -74,6 +74,7 @@ def patched_forward_orig(
         control=None,
         transformer_options={},
         attn_mask: Tensor = None,
+        **kwargs,
 ) -> Tensor:
     """Patched forward_orig with Flux2 Fun ControlNet support.
     
